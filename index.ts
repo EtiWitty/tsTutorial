@@ -9,7 +9,7 @@ interface Todo {
 }
 
 axios.get(url).then((response) => {
-  // Response.data has properties of:
+  // Response.data has properties of
   // id
   // title
   // completed
@@ -18,9 +18,14 @@ axios.get(url).then((response) => {
   const title = todo.title;
   const completed = todo.completed;
 
-  console.log(`
-    The Todo with ID: ${id}
-    Has a title of: ${title}
-    Is it finished? ${completed}
-  `);
+  // order of arguments sequence is important in TS
+  logTodo(id, title, completed);
 });
+
+const logTodo = (id: number, title: string, completed: boolean) => {
+  console.log(`
+  The Todo with ID: ${id}
+  Has a title of: ${title}
+  Is it finished? ${completed}
+`);
+};
