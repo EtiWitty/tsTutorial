@@ -1,12 +1,12 @@
-const apples: number = 5;
-const speed: string = "fast";
-let hasName: boolean = true;
+const apples = 5;
+const speed = "fast";
+let hasName = true;
 
-let nothingMuch: null = null;
-let nothing: undefined = undefined;
+let nothingMuch = null;
+let nothing = undefined;
 
 //build in objects
-let now: Date = new Date();
+let now = new Date();
 
 //Array
 let colors: string[] = ["red", "green", "blue"];
