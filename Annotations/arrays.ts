@@ -13,8 +13,6 @@ carMakers.push(100);
 
 // Help with 'map'
 // We can help with 'map', 'forEach', 'reduce' functions
-carMakers.map(
-  (car: string): String => {
-    return car.toUpperCase();
-  }
-);
+carMakers.map((car: string): string => {
+  return car.toUpperCase();
+});
