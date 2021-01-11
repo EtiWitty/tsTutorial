@@ -13,3 +13,11 @@ const sprite: Drink = ["clear", true, 40];
 const tea: Drink = ["brown", false, 40];
 
 // we can not say pepsi[0] = 40 for example
+
+const carSpecs: [number, number] = [400, 3354];
+
+// however obj is more usefull than tuple, since we know what are the properties
+const carStats = {
+  horsePower: 400,
+  weight: 3354,
+};
